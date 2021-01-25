@@ -1,8 +1,6 @@
 #include<stdio.h>
-#include<locale.h>
 
 int main(){
-    setlocale(LC_ALL, "Rus");  
         char i, j, N;
             printf("ВВедите число: ");
                 scanf("%d", &N);
