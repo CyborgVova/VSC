@@ -1,22 +1,11 @@
 #include<stdio.h>
-<<<<<<< HEAD
 #include<locale.h>
-
-
 
 int main(){
     setlocale(LC_ALL, "Rus");  
         char i, j, N;
             printf("ВВедите число: ");
                 scanf("%d", &N);
-=======
-
-int main(){
-     
-    char i, j, N;
-    printf("ВВедите число: ");
-    scanf("%d", &N);
->>>>>>> c64fb5844908bdbb8a8c4ccacab17be7c5cee0dd
 
     for (i = 0;i < N + 1;i++){
         for (j = 0; j < i; j++)
