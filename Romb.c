@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -6,24 +6,26 @@ int main()
     printf("Введите цифру: ");
     scanf("%d", &N);
 
-    for(i = 0; i < N / 2 + 1; i++) {
-        for(j = N / 2; j > i; j--)
+    for (i = 0; i < N / 2 + 1; i++)
+    {
+        for (j = N / 2; j > i; j--)
             printf(" ");
-        for(j = 0; j < i; j++)
+        for (j = 0; j < i; j++)
             printf("*");
-        for(j = 1; j < i; j++)
+        for (j = 1; j < i; j++)
             printf("*");
         printf("\n");
     }
 
-    for(i = 0; i < N / 2; i++) {
-        for(j = 0; j < i; j++)
+    for (i = 0; i < N / 2; i++)
+    {
+        for (j = 0; j < i; j++)
             printf(" ");
-        for(j = N / 2; j > i; j--)
+        for (j = N / 2; j > i; j--)
             printf("*");
-        for(j = N / 2 - 1; j > i; j--)
+        for (j = N / 2 - 1; j > i; j--)
             printf("*");
-                  printf("\n");
+        printf("\n");
     }
 
     return 0;
