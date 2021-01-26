@@ -3,8 +3,12 @@
 int main()
 {
     int N, i, j;
-    printf("Введите цифру: ");
+    do
+    {
+    printf("Введите четное чило: ");
     scanf("%d", &N);
+    }
+    while (N % 2 != 0);
 
     for (i = 0; i < N / 2 + 1; i++)
     {
