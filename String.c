@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include<locale.h>
+#include <locale.h>
 int main()
 {
-setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "Russian");
     char s[80], sym;
     int count, i;
     printf("Введите строку : ");
@@ -22,8 +22,8 @@ setlocale(LC_ALL, "Russian");
     printf("символ ");
     putchar(sym); // Вывод символа
 
-        printf(" встречается %d раз(а)", count);
-    
+    printf(" встречается %d раз(а)", count);
+
     getchar();
     getchar();
     return 0;

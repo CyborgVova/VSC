@@ -1,29 +1,34 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-     int N;
-        printf("Введите число: ");
-        scanf("%d", &N);
+int main()
+{
+    int N;
+    printf("Введите число: ");
+    scanf("%d", &N);
 
-    for (int i = 0;i < N;i++){
+    for (int i = 0; i < N; i++)
+    {
         printf("#");
     }
-            printf("\n");
+    printf("\n");
 
-if (N!=2){
-    for (int i = 0;i < N;i++){
-        printf("#");
-
-        for (int j = 1;j < N-1;j++){
-            printf("*");
-        }
-                printf("#\n");
-    }
-}
-    for (int i = 0;i < N;i++){
+    if (N != 2)
+    {
+        for (int i = 0; i < N; i++)
+        {
             printf("#");
+
+            for (int j = 1; j < N - 1; j++)
+            {
+                printf("*");
+            }
+            printf("#\n");
+        }
     }
-    
-    
-      return 0;
+    for (int i = 0; i < N; i++)
+    {
+        printf("#");
+    }
+
+    return 0;
 }
