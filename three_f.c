@@ -15,5 +15,6 @@ int main()
     }
     fclose(one);
     fclose(two);
+    fclose(out);
     return 0;
 }
