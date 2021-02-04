@@ -10,18 +10,22 @@ int main()
     for (i = 0; i < SIZE; i++)
     {
         arr[i] = 1 + rand() % 500;
-        if (arr[i] > max)
-        {
-            max = arr[i];
-        }
-        if (arr[i] < min)
-        {
-            min = arr[i];
-        }
         printf("%d ", arr[i]);
     }
-    printf("\n");
-    printf("Max = %d\n", max);
-    printf("Min = %d", min);
+    min = arr[0];
+    max = arr[0];
+    for (i = 0; i < SIZE; i++)
+    {
+    if (arr[i] > max)
+    {
+        max = arr[i];
+    }
+    if (arr[i] < min)
+    {
+        min = arr[i];
+    }
+    }
+    printf("\nMax = %d", max);
+    printf("\nMin = %d", min);
     return 0;
 }
